@@ -8,15 +8,15 @@
 
 import Foundation
 
-struct BasicRoot{
+struct AboutUsRoot{
         
     var message:String!
     var success:String!
         
     init(fromDictionary dictionary:[String:Any]){
                        
-        message = dictionary["msg"] as? String
-        success = dictionary["result"] as? String
+        message = dictionary["result"] as? String
+        success = "200"
     }
     
 }

@@ -9,7 +9,7 @@
 import Foundation
 
 struct ItemData{
-    
+
     var itemLists:[ItemModel]!
     init(fromDictionary dictionary:[String:Any]){
         itemLists = [ItemModel]()
@@ -20,8 +20,8 @@ struct ItemData{
             }
         }
     }
-    
-    
+        
+        
     func toDictionary() -> [String:Any]
     {
         var dictionary = [String:Any]()

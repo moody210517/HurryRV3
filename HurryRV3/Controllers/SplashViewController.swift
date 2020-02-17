@@ -28,9 +28,7 @@ class SplashViewController: UIViewController {
         self.movieView = UIView(frame:frame)
         self.view.addSubview(self.movieView)
         self.movieView.center = self.view.center;
-
-     
-               
+                    
         self.playVideo()
         self.loadBasicData()
         
@@ -48,7 +46,7 @@ class SplashViewController: UIViewController {
         self.avPlayer.play()
         
         NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: self.avPlayer.currentItem, queue: .main) { [weak self] _ in
-                 self?.appDelegate.moveToLogin(type: "")
+                 self?.appDelegate.moveToLogin(type: "")             
              }
                
     }

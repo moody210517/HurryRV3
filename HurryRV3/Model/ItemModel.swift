@@ -18,17 +18,18 @@ struct ItemModel{
          title = dictionary["title"] as? String
      }
     
+    
     func toDictionary() -> [String:Any]
-      {
-          var dictionary = [String:Any]()
-          if id != nil{
-              dictionary["id"] = id
-          }
-          if title != nil{
-              dictionary["title"] = title
-          }
-          return dictionary
-      }
+    {
+        var dictionary = [String:Any]()
+        if id != nil{
+            dictionary["id"] = id
+        }
+        if title != nil{
+            dictionary["title"] = title
+        }
+        return dictionary
+    }
     
     
     
