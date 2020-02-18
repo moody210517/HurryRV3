@@ -19,14 +19,14 @@ struct OrderHistoryData{
     var price : String!
     var transaction_id : String!
       
-    var date : [DateModel]!
-    var service : [ServiceModel]!
-    var deliveryAddress : [DeliveryAddressModel]    
+    var date : DateModel!
+    var service : ServiceModel!
+    var deliveryAddress : DeliveryAddressModel!
     var productLists:[ProductModel]!
 
     init(fromDictionary dictionary:[String:Any]){
 
-        id = dictionary["id"] as? String!
+        id = dictionary["id"] as? String
         track = dictionary["track"] as? String
         payment = dictionary["payment"] as? String
         accepted_by = dictionary["accepted_by"] as? String
@@ -57,13 +57,7 @@ struct OrderHistoryData{
     func toDictionary() -> [String:Any]
     {
         var dictionary = [String:Any]()
-        if itemLists != nil{
-            var dictionaryElements = [[String:Any]]()
-            for authorsElement in itemLists {
-                dictionaryElements.append(authorsElement.toDictionary())
-            }
-            dictionary["items"] = dictionaryElements
-        }
+       
         
         return dictionary
     }

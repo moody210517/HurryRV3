@@ -15,7 +15,7 @@ class QuestionPhoneRoot{
     
     init(fromDictionary dictionary:[String:Any]){
         if let dataData = dictionary["data"] as? [String:Any] {            
-           question = dataData["question"] as? [String:Any]           
+           question = dataData["question"] as? String          
         }
         success = dictionary["result"] as? String
     }

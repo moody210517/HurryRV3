@@ -64,10 +64,7 @@ struct DeliveryAddressModel{
         
     func toDictionary() -> [String:Any]
     {
-        var dictionary = [String:Any]()
-        if id != nil{
-            dictionary["id"] = id
-        }
+        var dictionary = [String:Any]()    
       
         return dictionary
     }

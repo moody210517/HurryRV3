@@ -14,7 +14,6 @@ struct ServiceModel{
      var price : String!
      var time_in : String!
      
-
     init(fromDictionary dictionary:[String:Any]){
          
          name = dictionary["service_name"] as? String

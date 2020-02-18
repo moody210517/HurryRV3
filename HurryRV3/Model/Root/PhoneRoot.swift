@@ -13,12 +13,12 @@ class PhoneRoot{
     var phone:String!
     var success:String!
         
-    init(fromDictionary dictionary:[String:Any]){       
+    init(fromDictionary dictionary:[[String:Any]]){       
         
         for dic in dictionary {
             phone = dic["PhoneNumber"] as? String            
         }        
-        success = 200
+        success = "200"
     }
     
 }

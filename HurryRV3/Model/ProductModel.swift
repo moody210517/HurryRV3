@@ -16,7 +16,7 @@ struct ProductModel{
      var quantity : String!
      var weight: String!
 
-     var tilte : String!
+     var title : String!
      var package_cost : String!
 
      var dimension1: String!
@@ -28,7 +28,7 @@ struct ProductModel{
 
      init(fromDictionary dictionary:[String:Any]){
          
-         product_type = dictionary["product_type"] as? String
+         product_type = dictionary["product_type"] as? Int
          title = dictionary["title"] as? String
          image = dictionary["image"] as? String
          quantity = dictionary["quantity"] as? String
@@ -37,7 +37,7 @@ struct ProductModel{
          dimension1 = dictionary["dimension"] as? String
          dimension2 = dictionary["dimension"] as? String
          dimension3 = dictionary["dimension"] as? String
-         weight_value = dictionary["weight"] as? String
+         
          mPackage = dictionary["image"] as? String
 
      }

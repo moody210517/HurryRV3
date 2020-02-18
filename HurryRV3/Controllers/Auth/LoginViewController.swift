@@ -83,6 +83,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate, NVActivityIndi
     
     //MARK:- Properties
     //var getLoginDetails = [LoginData]()
+    var transparentView = UIView()
     var defaults = UserDefaults.standard
     var isVerifyOn = false
     var isLogin = false
@@ -155,10 +156,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate, NVActivityIndi
         if UserHandler.sharedInstance.objLoginDetails != nil {
             let objData = UserHandler.sharedInstance.objLoginDetails
            
-            if let isLogin = objData?.isLogin {
-                self.isLogin = isLogin
-            }
-            
+           
             if let bgColor = defaults.string(forKey: "mainColor") {
                 //self.containerViewImage.backgroundColor = Constants.hexStringToUIColor(hex: "008080")
                
@@ -355,7 +353,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate, NVActivityIndi
     //Login Data Get Request
     func adForest_loginDetails() {
         self.showLoader()
-        UserHandler.getBasicData(success: { (successResponse) in
+        BasicHandler.getBasicData(success: { (successResponse) in
             self.stopAnimating()
             if successResponse.success == "200" {
                 //UserHandler.sharedInstance.objLoginDetails = successResponse.data
@@ -390,4 +388,19 @@ class LoginViewController: UIViewController, UITextFieldDelegate, NVActivityIndi
             self.presentVC(alert)
         }
     }
+    
+    
+    func onClickForgotUserName(){
+        let window = UIApplication.shared.keyWindow
+        transparentView.backgroundColor = UIColor.black.withAlphaComponent(0.7)
+        transparentView.frame =  self.view.frame
+        window?.addSubview(transparentView)
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(onClickTranparentView))
+        transparentView.addGestureRecognizer(tapGesture)
+        
+        //UIViewAnimating
+        
+    }
+    
+    
 }

@@ -20,8 +20,8 @@ class NetworkHandler {
                 headers = [
                     "Accept": "application/json",
                     //just add security
-                    "Purchase-Code" : Constants.customCodes.purchaseCode,
-                    "Custom-Security": Constants.customCodes.securityCode,
+                    //"Purchase-Code" : Constants.customCodes.purchaseCode,
+                    ////"Custom-Security": Constants.customCodes.securityCode,
                     "Adforest-Request-From" : "ios"
                 ]
             }
@@ -42,8 +42,8 @@ class NetworkHandler {
                     "Authorization" : "Basic \(base64String)",
                     "AdForest-Login-Type": "social",
                     //just add security
-                    "Purchase-Code" : Constants.customCodes.purchaseCode,
-                    "Custom-Security": Constants.customCodes.securityCode,
+                    //"Purchase-Code" : Constants.customCodes.purchaseCode,
+                    //"Custom-Security": Constants.customCodes.securityCode,
                     "Adforest-Request-From" : "ios"
                 ]
             }
@@ -63,8 +63,8 @@ class NetworkHandler {
                     "Accept": "application/json",
                     "Authorization" : "Basic \(base64String)",
                     //just add security
-                    "Purchase-Code" : Constants.customCodes.purchaseCode,
-                    "Custom-Security": Constants.customCodes.securityCode,
+                    //"Purchase-Code" : Constants.customCodes.purchaseCode,
+                    //"Custom-Security": Constants.customCodes.securityCode,
                     "Adforest-Request-From" : "ios"
                 ]
             }
@@ -172,8 +172,8 @@ class NetworkHandler {
                     "Authorization" : "Basic \(base64String)",
                     "AdForest-Login-Type": "social",
                     //just add security
-                    "Purchase-Code" : Constants.customCodes.purchaseCode,
-                    "Custom-Security": Constants.customCodes.securityCode,
+                    //"Purchase-Code" : Constants.customCodes.purchaseCode,
+                    //"Custom-Security": Constants.customCodes.securityCode,
                      "Adforest-Request-From" : "ios"
                 ]
             }
@@ -199,8 +199,8 @@ class NetworkHandler {
                     "Accept": "application/json",
                     "Authorization" : "Basic \(base64String)",
                     //just add security
-                    "Purchase-Code" : Constants.customCodes.purchaseCode,
-                    "Custom-Security": Constants.customCodes.securityCode,
+                    //"Purchase-Code" : Constants.customCodes.purchaseCode,
+                    //"Custom-Security": Constants.customCodes.securityCode,
                      "Adforest-Request-From" : "ios"
                 ]
             }
@@ -232,8 +232,8 @@ class NetworkHandler {
             headers = [
                 "Accept": "application/json",
                 //just add security
-                "Purchase-Code" : Constants.customCodes.purchaseCode,
-                "Custom-Security": Constants.customCodes.securityCode,
+                //"Purchase-Code" : Constants.customCodes.purchaseCode,
+                //"Custom-Security": Constants.customCodes.securityCode,
                 "Adforest-Request-From" : "ios"
             ]
         }
@@ -257,8 +257,8 @@ class NetworkHandler {
                 "Authorization" : "Basic \(base64String)",
                 "AdForest-Login-Type": "social",
                 //just add security
-                "Purchase-Code" : Constants.customCodes.purchaseCode,
-                "Custom-Security": Constants.customCodes.securityCode,
+                //"Purchase-Code" : Constants.customCodes.purchaseCode,
+                //"Custom-Security": Constants.customCodes.securityCode,
                 "Adforest-Request-From" : "ios"
             ]
         }
@@ -279,8 +279,8 @@ class NetworkHandler {
                 
                 "Authorization" : "Basic \(base64String)",
                 //just add security
-                "Purchase-Code" : Constants.customCodes.purchaseCode,
-                "Custom-Security": Constants.customCodes.securityCode,
+                //"Purchase-Code" : Constants.customCodes.purchaseCode,
+                //"Custom-Security": Constants.customCodes.securityCode,
                 "Adforest-Request-From" : "ios"
             ]
         }
@@ -326,8 +326,8 @@ class NetworkHandler {
             headers = [
                 "Accept": "application/json",
                 //just add security
-                "Purchase-Code" : Constants.customCodes.purchaseCode,
-                "Custom-Security": Constants.customCodes.securityCode,
+                //"Purchase-Code" : Constants.customCodes.purchaseCode,
+                //"Custom-Security": Constants.customCodes.securityCode,
                 "Adforest-Request-From" : "ios"
             ]
         }
@@ -355,8 +355,8 @@ class NetworkHandler {
                 "Authorization" : "Basic \(base64String)",
                 "AdForest-Login-Type": "social",
                 //just add security
-                "Purchase-Code" : Constants.customCodes.purchaseCode,
-                "Custom-Security": Constants.customCodes.securityCode,
+                //"Purchase-Code" : Constants.customCodes.purchaseCode,
+                //"Custom-Security": Constants.customCodes.securityCode,
                 "Adforest-Request-From" : "ios"
             ]
         }
@@ -382,8 +382,8 @@ class NetworkHandler {
                 
                 "Authorization" : "Basic \(base64String)",
                 //just add security
-                "Purchase-Code" : Constants.customCodes.purchaseCode,
-                "Custom-Security": Constants.customCodes.securityCode,
+                //"Purchase-Code" : Constants.customCodes.purchaseCode,
+                //"Custom-Security": Constants.customCodes.securityCode,
                 "Adforest-Request-From" : "ios"
             ]
         }
@@ -404,8 +404,8 @@ class NetworkHandler {
             headers = [
                 "Accept": "application/json",
                 //just add security
-                "Purchase-Code" : Constants.customCodes.purchaseCode,
-                "Custom-Security": Constants.customCodes.securityCode,
+                //"Purchase-Code" : Constants.customCodes.purchaseCode,
+                //"Custom-Security": Constants.customCodes.securityCode,
                 "Adforest-Request-From" : "ios"
             ]
         }
@@ -428,8 +428,8 @@ class NetworkHandler {
                 "Authorization" : "Basic \(base64String)",
                 "AdForest-Login-Type": "social",
                 //just add security
-                "Purchase-Code" : Constants.customCodes.purchaseCode,
-                "Custom-Security": Constants.customCodes.securityCode,
+                //"Purchase-Code" : Constants.customCodes.purchaseCode,
+                //"Custom-Security": Constants.customCodes.securityCode,
                 "Adforest-Request-From" : "ios"
             ]
         }
@@ -451,8 +451,8 @@ class NetworkHandler {
                 
                 "Authorization" : "Basic \(base64String)",
                 //just add security
-                "Purchase-Code" : Constants.customCodes.purchaseCode,
-                "Custom-Security": Constants.customCodes.securityCode,
+                //"Purchase-Code" : Constants.customCodes.purchaseCode,
+                //"Custom-Security": Constants.customCodes.securityCode,
                 "Adforest-Request-From" : "ios"
             ]
         }
@@ -517,8 +517,8 @@ class NetworkHandler {
                 "Authorization" : "Basic \(base64String)",
                 "AdForest-Login-Type": "social",
                 //just add security
-                "Purchase-Code" : Constants.customCodes.purchaseCode,
-                "Custom-Security": Constants.customCodes.securityCode,
+                //"Purchase-Code" : Constants.customCodes.purchaseCode,
+                //"Custom-Security": Constants.customCodes.securityCode,
                 "Adforest-Request-From" : "ios"
             ]
         }
@@ -540,8 +540,8 @@ class NetworkHandler {
                 
                 "Authorization" : "Basic \(base64String)",
                 //just add security
-                "Purchase-Code" : Constants.customCodes.purchaseCode,
-                "Custom-Security": Constants.customCodes.securityCode,
+                //"Purchase-Code" : Constants.customCodes.purchaseCode,
+                //"Custom-Security": Constants.customCodes.securityCode,
                 "Adforest-Request-From" : "ios"
             ]
         }
@@ -551,7 +551,7 @@ class NetworkHandler {
             var i = 0
             for image in imagesArray {
           
-                if let imageData = UIImageJPEGRepresentation(image, 0.5) {
+                if let imageData = image.jpegData(compressionQuality: 0.5) {
                 
                 print(imageData)
                 multipartFormData.append(imageData,  withName: "nverness\(i).jpg", fileName: "Inverness\(i).jpg" , mimeType: "image/jpeg")

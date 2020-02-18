@@ -11,7 +11,6 @@ import UIKit
 
 class Constants{
     
-    
     struct URL {
         static  let g_baseUrl = "https://mobileapi.hurryr.in"
         static let BASE_URL = g_baseUrl + "/WebService/"

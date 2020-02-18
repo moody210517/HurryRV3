@@ -90,7 +90,7 @@ class UserHandler{
 
     // get otp code from phone number
     class func getOtpSignup(parameter: NSDictionary, success: @escaping(BasicRoot)-> Void, failure: @escaping(NetworkError)-> Void) {
-        let url = Constants.URL.BASIC_DATA_URL + "getOtpSignup"
+        let url = Constants.URL.BASE_URL + "getOtpSignup"
            print(url)
         NetworkHandler.postRequest(url: url, parameters: parameter as? Parameters , success: { (successResponse) in            
                let dictionary = successResponse as! [String: Any]

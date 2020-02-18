@@ -46,8 +46,8 @@ class BasicHandler{
            print(url)
         NetworkHandler.postRequest(url: url, parameters: parameter as? Parameters , success: { (successResponse) in
 
-            let dictionary = successResponse as! [[String: Any]]
-            let data = PhoneRoot(fromDictionary: dictionary)
+            let dictionary = successResponse as! [String: Any]
+            let data = PhoneRoot.init(fromDictionary: dictionary)
             UserDefaults.standard.set(data, forKey: "config_phone_number")
             UserDefaults.standard.synchronize()
             success(data)

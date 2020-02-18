@@ -10,7 +10,6 @@ import UIKit
 import AVFoundation
 import AVKit
 
-
 class SplashViewController: UIViewController {
 
     let avPlayerLayer = AVPlayerLayer()
@@ -53,7 +52,7 @@ class SplashViewController: UIViewController {
     
     func loadBasicData(){
     
-        UserHandler.getCity(success: {(successRes) in
+        BasicHandler.getCity(success: {(successRes) in
             if(successRes.success == "200"){
                 Constants.cityLists = successRes.cityLists
                 //self.appDelegate.moveToLogin()

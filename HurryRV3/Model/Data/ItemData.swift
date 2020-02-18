@@ -15,6 +15,7 @@ struct ItemData{
         itemLists = [ItemModel]()
         if let postArray = dictionary["items"] as? [[String:Any]]{
             for dic in postArray {
+                
                 let value = ItemModel(fromDictionary: dic)
                 itemLists.append(value)
             }
